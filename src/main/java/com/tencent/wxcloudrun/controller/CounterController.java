@@ -44,7 +44,7 @@ public class CounterController {
     if (counter.isPresent()) {
       count = counter.get().getCount();
     }
-
+    logger.debug("hhh");
     return ApiResponse.ok(count);
   }
 
